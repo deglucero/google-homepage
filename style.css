@@ -22,3 +22,57 @@ h1 {
     transform: translateY(-50%);
 }
 
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style the search field */
+  form.caja input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+  form.caja button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  form.caja button:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  form.caja::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline;
+  }
+
+  footer {
+    text-align: center;
+    padding: 3px;
+    background-color: DarkSalmon;
+    color: white;
+  }
